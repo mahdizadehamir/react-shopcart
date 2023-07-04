@@ -11,7 +11,7 @@ import "animate.css";
 const Product = ({ productData }) => {
   const { state, dispatch } = useContext(CartContext);
   return (
-    <div className="lg:w-60 sm:w-28 w-64 flex flex-col justify-center items-center border-solid border-2 border-gray-400 p-3 bg-white rounded-lg ">
+    <div className="lg:w-60  w-64 flex flex-col justify-center items-center border-solid border-2 border-gray-400 p-3 bg-white rounded-lg ">
       <img className="w-48 h-52" src={productData.image} alt="product" />
       <h3 className="self-start my-3">{shorten(productData.title)}</h3>
       <p className="self-start my-3">{productData.price} $</p>

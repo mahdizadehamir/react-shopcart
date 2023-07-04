@@ -11,7 +11,7 @@ const ProductDetails = (props) => {
   const { image, title, description, price, category } = product;
   return (
     <div className="flex md:flex-row md:justify-center md:items-center gap-3  flex-col mt-24 bg-white px-2 ">
-      <img className=" w-full object-cover" src={image} alt="product" />
+      <img className=" max-w-md object-cover" src={image} alt="product" />
       <div className="mt-5 border border-solid border-gray-400 rounded-md flex flex-col gap-4 px-3 h-fit py-3">
         <h3 className="text-xl text-blue-500 font-bold">{title}</h3>
         <p className="mt-4">{description}</p>
