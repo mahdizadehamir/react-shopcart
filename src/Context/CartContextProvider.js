@@ -11,6 +11,7 @@ const sumItems = (items) => {
   const itemsCounter = items.reduce(
     (total, product) => total + product.quantity,
     0
+    
   );
   const totalPrice = items
     .reduce((total, product) => total + product.quantity * product.price, 0)
